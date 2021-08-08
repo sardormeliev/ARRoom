@@ -77,7 +77,7 @@ public class TouchHandler : MonoBehaviour
 
         this.touches = Input.touches;
 
-        if (Input.touchCount == 2)
+        if (Input.touchCount == 122)
         {
             this.AugmentationObject.GetChild(1).gameObject.SetActive(true);
             this.AugmentationObject.GetChild(0).gameObject.SetActive(false);
@@ -116,7 +116,7 @@ public class TouchHandler : MonoBehaviour
             this.cachedAugmentationRotation = this.AugmentationObject.localEulerAngles;
             this.isFirstFrameWithTwoTouches = true;
         }
-        else if (Input.touchCount == 3)
+        else if (Input.touchCount == 2)
         {
             float currentTouchDistance = Vector2.Distance(this.touches[0].position, this.touches[1].position);
             float diff_y = this.touches[0].position.y + this.touches[1].position.y;

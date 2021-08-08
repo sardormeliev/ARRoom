@@ -229,7 +229,7 @@ GameObject:
   - component: {fileID: 22732921}
   m_Layer: 0
   m_Name: AR Camera
-  m_TagString: Untagged
+  m_TagString: MainCamera
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2703,7 +2703,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectToPlace:
+  - {fileID: 4424685700141778801, guid: b675e606d49b04005b7c91ca06957ba9, type: 3}
   - {fileID: 582481953838658928, guid: e2067d1cc25574ddd920d548211c336b, type: 3}
+  - {fileID: 7962961493043831938, guid: b2c8bb76bb8ab45f38a664ac0590545e, type: 3}
+  - {fileID: 5872398287858189795, guid: d2ba40efddb4e48e0b5ac493b2a0d997, type: 3}
+  - {fileID: 582481953838658928, guid: e2067d1cc25574ddd920d548211c336b, type: 3}
+  - {fileID: 1524610379716421678, guid: 3417e8660464d42ce9675cb055c0da2b, type: 3}
+  - {fileID: 1524610379716421678, guid: 3417e8660464d42ce9675cb055c0da2b, type: 3}
+  - {fileID: 7962961493043831938, guid: b2c8bb76bb8ab45f38a664ac0590545e, type: 3}
+  - {fileID: 4424685700141778801, guid: b675e606d49b04005b7c91ca06957ba9, type: 3}
+  - {fileID: 8907000268382476120, guid: 382a7ae72f03c428fa435e32c0a2cd91, type: 3}
   placementIndicator: {fileID: 2136928257}
   menuObject: {fileID: 2071880702}
   detailObject: {fileID: 455371653}

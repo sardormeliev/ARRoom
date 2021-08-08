@@ -63,18 +63,18 @@ public class SelectionManager : MonoBehaviour
 
             if (touch.phase == TouchPhase.Began)
             {
-               // zPosition = Camera.current.WorldToScreenPoint(_selection.position).z;
+                zPosition = Camera.current.WorldToScreenPoint(_selection.position).z;
 
                 offSet = _selection.position - GetInputWorldPosition();
-                //_selection.GetChild(0).gameObject.SetActive(true);
+                _selection.GetComponent<Item>().GetIndicator.gameObject.SetActive(true);
             }
             else if (touch.phase == TouchPhase.Stationary || touch.phase == TouchPhase.Moved)
             {
                 Vector3 result = GetInputWorldPosition() + offSet;
-                _selection.position = new Vector3(result.x, result.y, _selection.position.z);
+                _selection.position = new Vector3(result.x, result.y, result.z);
             }
             else {
-                //_selection.GetChild(0).gameObject.SetActive(false);
+                _selection.GetComponent<Item>().GetIndicator.gameObject.SetActive(false);
             }
         }
        
