@@ -9,7 +9,7 @@ using UnityEngine.UI;
 public class PlacementController : MonoBehaviour
 {
     public List<GameObject> objectToPlace;
-    public GameObject placementIndicator;
+    //public GameObject placementIndicator;
 
     public GameObject menuObject;
     public GameObject detailObject;
@@ -33,7 +33,7 @@ public class PlacementController : MonoBehaviour
     void Update()
     {
         UpdatePlacmentPose();
-        UpdatePlacmentIndicator();
+       // UpdatePlacmentIndicator();
     }
 
     public void OnClickCreate(int index)
@@ -52,20 +52,7 @@ public class PlacementController : MonoBehaviour
         Instantiate(objectToPlace[index], placementPose.position, placementPose.rotation);
     }
 
-    private void UpdatePlacmentIndicator()
-    {
-        if (placementPoseIsValid)
-        {
-           // addButton.interactable = true;
-            placementIndicator.SetActive(true);
-            placementIndicator.transform.SetPositionAndRotation(placementPose.position, placementPose.rotation);
-        }
-        else
-        {
-            placementIndicator.SetActive(false);
-           // addButton.interactable = false;
-        }
-    }
+   
 
     private void UpdatePlacmentPose()
     {

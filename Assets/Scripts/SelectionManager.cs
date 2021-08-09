@@ -51,7 +51,7 @@ public class SelectionManager : MonoBehaviour
 
                 _selection = selection;
 
-                touchHandler.enableRotation = true;
+                touchHandler.enableRotation = false;
                 touchHandler.AugmentationObject = _selection;
             }
         } // raycast if end
@@ -71,7 +71,7 @@ public class SelectionManager : MonoBehaviour
             else if (touch.phase == TouchPhase.Stationary || touch.phase == TouchPhase.Moved)
             {
                 Vector3 result = GetInputWorldPosition() + offSet;
-                _selection.position = new Vector3(result.x, result.y, result.z);
+                _selection.position = new Vector3(result.x, result.y, _selection.position.z);
             }
             else {
                 _selection.GetComponent<Item>().GetIndicator.gameObject.SetActive(false);

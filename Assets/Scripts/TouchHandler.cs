@@ -77,7 +77,7 @@ public class TouchHandler : MonoBehaviour
 
         this.touches = Input.touches;
 
-        if (Input.touchCount == 122)
+        if (Input.touchCount == 222)
         {
             this.AugmentationObject.GetChild(1).gameObject.SetActive(true);
             this.AugmentationObject.GetChild(0).gameObject.SetActive(false);

@@ -17,7 +17,7 @@ public class ContentItem : MonoBehaviour
 
     private Detail detail;
 
-    private PlacementController placementController;
+    private PlacementReticle placementController;
 
     public void OnClickDetail()
     {
@@ -33,7 +33,7 @@ public class ContentItem : MonoBehaviour
     public void OnClick3D()
     {
         if (placementController == null)
-            placementController = FindObjectOfType<PlacementController>();
+            placementController = FindObjectOfType<PlacementReticle>();
 
         placementController.OnClickCreate(index);
     }
