@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1524610379716421665}
   - component: {fileID: 5930723267818446087}
+  - component: {fileID: 1944369926364499895}
   m_Layer: 0
   m_Name: Window1
   m_TagString: Untagged
@@ -47,6 +48,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveIndicator: {fileID: 8842899244467466019}
+--- !u!65 &1944369926364499895
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1524610379716421678}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.1524103, y: 1.440296, z: 0.11517319}
+  m_Center: {x: -0.012700915, y: 0.15241069, z: -0.035985813}
 --- !u!1 &5923127905826927320
 GameObject:
   m_ObjectHideFlags: 0
